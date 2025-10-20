@@ -55,20 +55,4 @@ This project implements a **serverless data pipeline** on AWS that automatically
 | 5 | Glue Crawler runs | Scheduled or Triggered |
 | 6 | Athena queries data | User / BI Tool |
 
----
-
-## ⚙️ Terraform Integration
-
-If using **Terraform**, you can:
-- Define S3, SNS, SQS, and Lambda infrastructure.
-- Configure Glue Crawler and Athena query output location.
-- Example Athena configuration:
-  ```hcl
-  resource "aws_athena_workgroup" "main" {
-    name = "default"
-    configuration {
-      result_configuration {
-        output_location = "s3://<your-bucket-name>/athena-queries/"
-      }
-    }
   }
