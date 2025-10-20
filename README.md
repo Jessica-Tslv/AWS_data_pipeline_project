@@ -1,4 +1,4 @@
-# 🧠 AWS Serverless Data Pipeline (CSV → Parquet → Athena)
+# AWS Serverless Data Pipeline (CSV → Parquet → Athena)
 
 This project implements a **serverless data pipeline** on AWS that automatically processes CSV files uploaded to an S3 bucket, converts them into Parquet format, and makes them queryable via Amazon Athena using AWS Glue for schema management.
 
